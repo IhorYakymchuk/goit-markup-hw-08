@@ -1,0 +1,36 @@
+.activity {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  text-align: center;
+  padding-top: 0;
+}
+
+.activity__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $card-set-gap;
+}
+
+.activity__item {
+  flex-basis: calc((100% - $card-set-gap * 2) / 3);
+  position: relative;
+}
+
+.activity__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $white-text-color;
+  background-color: $activity-desc-bg-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

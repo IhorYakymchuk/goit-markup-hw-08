@@ -1,0 +1,234 @@
+.footer {
+  background-color: $hero-footer-bg-color;
+
+  padding: 60px 0;
+}
+
+.footer__overlay {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-address-container {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.studio-footer {
+  color: $white-text-color;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.address__link {
+  color: $white-text-color;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  margin-bottom: 9px;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__item {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__mail,
+.address__tel {
+  color: $footer-contacts-color;
+
+  font-weight: 400;
+  line-height: 1.71;
+
+  transition: color 250ms $timing-function;
+}
+
+.address__mail:hover,
+.address__mail:focus,
+.address__tel:hover,
+.address__tel:focus {
+  color: $accent-color;
+}
+
+.footer__socials--container {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.subscribe__slogan {
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__socials--list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__socials--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: $footer-icons-bg-color;
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover &,
+  &:focus & {
+    background-color: $accent-color;
+    fill: $white-text-color;
+  }
+}
+
+.footer__socials--icon {
+  fill: $white-text-color;
+}
+
+.subscribe-container {
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 450px;
+  }
+}
+
+.subscribe__overlay {
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.subscribe__input {
+  width: 100%;
+  height: 50px;
+
+  margin-bottom: 20px;
+  border: $sudsc--input-border-color;
+  filter: drop-shadow($hero-btn-box-shadow);
+  border-radius: 4px;
+  background-color: transparent;
+  color: $white-text-color;
+  transition: border-color 250ms $timing-function;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 15px;
+    margin-right: 12px;
+
+    width: 358px;
+  }
+}
+
+.subscribe__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 28px;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  color: $white-text-color;
+  background-color: $accent-color;
+  box-shadow: $hero-btn-box-shadow;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $timing-function;
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  fill: $primary-bg-color;
+}

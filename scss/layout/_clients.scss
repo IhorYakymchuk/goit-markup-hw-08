@@ -1,0 +1,43 @@
+.clients {
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  width: 210px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primary-icons-fill-color;
+  border-radius: 4px;
+
+  color: $primary-icons-fill-color;
+
+  transition: border-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
