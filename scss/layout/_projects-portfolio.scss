@@ -67,7 +67,9 @@
 }
 
 .projects__img {
-  height: 294px;
+  @media screen and (min-width: 480px) {
+    height: 294px;
+  }
 }
 
 .projects-desc {
