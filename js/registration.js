@@ -1,9 +1,9 @@
-(() => {
-  document.querySelector('.modal-form').addEventListener('submit', e => {
-    e.preventDefault();
+// (() => {
+//   document.querySelector('.modal-form').addEventListener('submit', e => {
+//     e.preventDefault();
 
-    new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+//     new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
 
-    e.currentTarget.reset();
-  });
-})();
+//     e.currentTarget.reset();
+//   });
+// })();
